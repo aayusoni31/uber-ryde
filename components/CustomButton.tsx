@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
-
-import { ButtonProps, TouchableOpacity, Text } from "react-native";
+// import { ButtonProps } from "react-native";
+import { ButtonProps } from "@/types/type";
+import { TouchableOpacity, Text } from "react-native";
 const getBgVariantStyle = (variant: ButtonProps["bgVariant"]) => {
   switch (variant) {
     case "secondary":
@@ -43,7 +44,8 @@ const CustomButton = ({
   return (
     <TouchableOpacity
       onPress={onPress}
-      className={`w-full rounded-full flex flex-row justify-center items-center shadow-md shadow-neutral-400/70 ${getBgVariantStyle(bgVariant)} ${className}`}
+      className={`w-full rounded-full p-3 mb-4 flex flex-row justify-center items-center shadow-md shadow-neutral-400/70 ${getBgVariantStyle(bgVariant)} ${className}`}
+      {...props}
     >
       {IconLeft && <IconLeft />}
       <Text className={`text-lg font-bold ${getTextVariantStyle(textVariant)}`}>
