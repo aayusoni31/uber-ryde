@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { Link, router } from "expo-router";
-import { Image, ScrollView, Text, View, StyleSheet, Alert } from "react-native";
+import { Image, ScrollView, Text, View, Alert } from "react-native";
 import { icons, images } from "@/constants";
 import InputField from "@/components/InputField";
 import CustomButton from "@/components/CustomButton";
