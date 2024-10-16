@@ -9,7 +9,9 @@ export default function Page() {
 
   return (
     <SafeAreaView>
-      <SignedIn></SignedIn>
+      <SignedIn>
+        <Text>Hello {user?.emailAddresses[0].emailAddress}</Text>
+      </SignedIn>
       <SignedOut>
         <Link href="/sign-in">
           <Text>Sign In</Text>
