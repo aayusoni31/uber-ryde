@@ -10,7 +10,6 @@ import {
   TextInput,
 } from "react-native";
 import { InputFieldProps } from "@/types/type";
-import { IOS } from "nativewind/dist/utils/selector";
 const InputField = ({
   label,
   labelStyle,
